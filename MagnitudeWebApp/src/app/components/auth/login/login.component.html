@@ -1,0 +1,75 @@
+ <div class="parent background-with-overlay">
+    <div class="container show-overlay">
+      <div class="text centerform"><img src="https://magnitudemai.com/wp-content/uploads/2022/11/MAI-Logo-Colour-2-768x336.png" alt="logo"  width="290px" height="130px"style="padding-top: 10px;"></div>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div class="input-data">
+            <input type="text"  [(ngModel)]="username" name="username" (focus)="setPlaceholder($event, usernamePlaceholder)" (blur)="clearPlaceholder($event)" required/>
+            <div class="underline"></div>
+            <label for="">UserName<span class="required">*</span></label>
+            <div *ngIf="usernameValidationMessage" class="validation-message small-text">{{ usernameValidationMessage }}</div>
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data">
+              <input type="password" [(ngModel)]="password" name="password" (focus)="setPlaceholder($event, passwordPlaceholder)" (blur)="clearPlaceholder($event)" required/>
+              <div class="underline"></div>
+              <label for="">Password<span class="required">*</span></label>
+              <div *ngIf="passwordValidationMessage" class="validation-message small-text">{{ passwordValidationMessage }}</div>
+            </div>
+          </div>
+        <div class="form-row">    
+          <p class="textcss"><button class="btntotext" (click)="openDialog()">Forgot Password</button>
+            | <a  [routerLink]="['/contact']"  class="contactus">Contact</a></p>
+        </div>
+        <div class="form-row submit-btn">
+          <div class="input-data">
+            <div class="inner"></div>
+            <input value="Login" type="submit">
+          </div>
+        </div>
+      </form>
+      <p style="font-size: 13px;"><span>version 1.0.0</span><span style="margin-left: 49%;">Terms & Conditions</span></p>
+    </div>
+  </div>
+  
+   <!-- <div class="parent">
+    <div class="container">
+        <div class="text centerform">
+            <img src="assets/Logo.png" alt="logo" width="100px" height="120px" style="padding-top: 10px;">
+        </div>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" [(ngModel)]="username" name="username" (focus)="setPlaceholder($event, usernamePlaceholder)" (blur)="clearPlaceholder($event)" required />
+                    <div class="underline"></div>
+                    <label for="">UserName<span class="required">*</span></label>
+                    <div *ngIf="usernameValidationMessage" class="validation-message small-text">{{ usernameValidationMessage }}</div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="password" [(ngModel)]="password" name="password" (focus)="setPlaceholder($event, passwordPlaceholder)" (blur)="clearPlaceholder($event)" required />
+                    <div class="underline"></div>
+                    <label for="">Password<span class="required">*</span></label>
+                    <div *ngIf="passwordValidationMessage" class="validation-message small-text">{{ passwordValidationMessage }}</div>
+                </div>
+            </div>
+            <div class="form-row">
+                <p class="textcss"><a href="#" class="forgot-password">Forgot Password</a> | <a href="#" class="contactus">Contact</a></p>
+            </div>
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <div class="inner"></div>
+                    <input value="Login" type="submit">
+                </div>
+            </div>
+        </form>
+        <div class="terms-conditions">
+            <p style="font-size: 13px;"><span>version 1.0.0</span></p>
+            <p style="font-size: 13px; margin-left: auto;"><span>Terms & Conditions</span></p>
+        </div>
+    </div>
+</div>
+ -->
+

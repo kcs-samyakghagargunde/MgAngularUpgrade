@@ -1,0 +1,117 @@
+body, html {
+  height: 100%;
+}
+.bgimg {
+  background-image: url('https://www.anybotics.com/wp-content/plugins/anybotics-extension/assets/images/map-graphic.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  opacity: 0.7;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.slogan {
+  color: black;
+  animation: slide 2s ease-in-out forwards;
+}
+@keyframes slide {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.logoanimation{
+  animation: UpDown 2s ease-in-out forwards;
+}
+@keyframes UpDown {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+p span{
+  color: black;
+  font-weight: bold;
+  font-family:  "Raleway", sans-serif;
+  letter-spacing: 2px;
+}
+.txt{
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: Ebrima, Times, serif;
+}
+
+a {
+  position: relative;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  background-color:rgb(23, 152, 212);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  display: block;
+  padding: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 9px 0px rgb(0, 115, 168), 0px 9px 25px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0px 9px 0px rgb(0, 115, 168), 0px 9px 25px rgba(0, 0, 0, .7);
+  box-shadow: 0px 9px 0px rgb(0, 115, 168), 0px 9px 25px rgba(0, 0, 0, .7);
+  margin: auto 250px;
+  width: 110px;
+  text-align: center;
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+a:active {
+  -webkit-box-shadow: 0px 3px 0px rgba(0, 163, 168, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+  -moz-box-shadow: 0px 3px 0px rgba(0, 163, 168, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+  box-shadow: 0px 3px 0px rgba(0, 163, 168, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+  position: relative;
+  top: 6px;
+}
+/* Add these lines to your existing CSS */
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(0);
+  animation: dotAnimation 1s forwards;
+}
+
+@keyframes dotAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add these lines to your existing CSS */
+@keyframes lineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

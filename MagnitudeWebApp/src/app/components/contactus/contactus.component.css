@@ -1,0 +1,31 @@
+/* button {
+    margin: 10px; 
+  }
+  .container-btn{
+    text-align: center;
+  }
+  section{
+    background: url(https://m.magnitudefb.com/MGUploadData/Themes/11419/ThemeMDPI/WebBg.png);
+    background-size: cover;
+    background-position: center;
+  } */
+
+  /* body,h1 {font-family: "Raleway", sans-serif} */
+/* body, html {height: 100%} */
+.bgimg {
+  background-image: url(https://m.magnitudefb.com/MGUploadData/Themes/11419/ThemeMDPI/WebBg.png);
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+button {
+    margin: 10px; 
+    height: 35px;
+    color: white;
+  }
+  .container-btn{
+    text-align: center;
+  }
+  .container{
+    padding-top: 2%;
+  }

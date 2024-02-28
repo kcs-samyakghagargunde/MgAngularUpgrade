@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background: url(https://m.magnitudefb.com/MGUploadData/Themes/11419/ThemeMDPI/WebBg.png); */
+    /* background-size: cover; */
+
+}
+
+
+.box {
+    flex: 0 0 calc(25% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.round-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+img {
+    width: 85px;
+    height: 90px;
+    padding: 10px;
+}
+
+.box .txt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .box p mat-icon {
+    margin-right: 5px; /* Adjust as needed */
+    font-size: 20px;
+  }
+  
+  .ct{
+    color: white;
+    background-color: red;
+    /* width: 100px; */
+    padding: 2px 30px;
+    border: 1px solid black;
+  }
