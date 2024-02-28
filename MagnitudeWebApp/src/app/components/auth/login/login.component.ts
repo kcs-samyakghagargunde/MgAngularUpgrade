@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import { MatDialog } from '@angular/material/dialog';
-import { ForgotPasswordComponent } from '../../forgot-password/forgot-password.component';
+import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
 
 @Component({
   selector: 'app-login',
@@ -59,10 +59,12 @@ export class LoginComponent {
     }
 
     if (!this.usernameValidationMessage && !this.passwordValidationMessage) {
+    
       console.log('Form submitted with username:', this.username, 'and password:', this.password);
-     this.authService.login(this.username, this.password).subscribe(() => {
+    //  this.authService.login(this.username, this.password).subscribe(() => {
+  
       this.router.navigate(['/activity']); 
-    });
+    // });
     }
   }
   openDialog(): void {

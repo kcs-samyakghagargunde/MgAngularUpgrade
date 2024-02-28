@@ -1,0 +1,41 @@
+<div class="mainDiv">
+    
+    <div class="container">
+        <form #contactForm="ngForm" (ngSubmit)="contactForm.valid && editCategory()">
+          <input type="hidden" id="contactId" name="contactId" [(ngModel)]="editedContact.id">
+          
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" class="InputFields" placeholder="Your name.." [(ngModel)]="editedContact.firstName" required>
+          <div class="text-danger" *ngIf="contactForm.controls['firstname'].hasError('required') && (contactForm.controls['firstname'].touched || contactForm.submitted)">
+            First Name is required.
+          </div>
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" class="InputFields" placeholder="Your last name.." [(ngModel)]="editedContact.lastName" required>
+          <div class="text-danger" *ngIf="contactForm.controls['lastname'].hasError('required') && (contactForm.controls['lastname'].touched || contactForm.submitted)">
+            Last Name is required.
+          </div>
+      
+          <label for="lmobile">Mobile</label>
+          <input type="text" id="lmobile" name="lmobile" class="InputFields" placeholder="Your Mobile number.." [(ngModel)]="editedContact.mobile" required>
+          <div class="text-danger" *ngIf="contactForm.controls['lmobile'].hasError('required') && (contactForm.controls['lmobile'].touched || contactForm.submitted)">
+            Mobile is required.
+          </div>
+      
+          <label for="lemail">Email</label>
+          <input type="text" id="lemail" name="lemail" class="InputFields" placeholder="Your Email.." [(ngModel)]="editedContact.email" required>
+          <div class="text-danger" *ngIf="contactForm.controls['lemail'].hasError('required') && (contactForm.controls['lemail'].touched || contactForm.submitted)">
+            Email is required.
+          </div>
+      
+          <label for="lcompany">Company</label>
+          <input type="text" id="lcompany" name="lcompany" class="InputFields" placeholder="Your Company name.." [(ngModel)]="editedContact.company" required>
+          <div class="text-danger" *ngIf="contactForm.controls['lcompany'].hasError('required') && (contactForm.controls['lcompany'].touched || contactForm.submitted)">
+            Company Name is required.
+          </div>
+        
+          <input type="submit" value="Update">
+        </form>
+      </div>
+  </div>
+  
