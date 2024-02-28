@@ -12,11 +12,15 @@ import { ActivityComponent } from './components/activity/activity.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
-import { ContactusComponent } from './components/contactus/contactus.component';
+import { ContactusComponent } from './components/auth/contactus/contactus.component';
+import { ContactsComponent } from './components/contact/contacts/contacts.component';
+import { ContactlistComponent } from './components/contact/contactlist/contactlist.component';
+import { ContacteditComponent } from './components/contact/contactedit/contactedit.component';
+import { CaptureformComponent } from './components/contact/captureform/captureform.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,11 @@ import { ContactusComponent } from './components/contactus/contactus.component';
     HomeComponent,
     ActivityComponent,
     ForgotPasswordComponent,
-    ContactusComponent
+    ContactusComponent,
+    ContactsComponent,
+    ContactlistComponent,
+    ContacteditComponent,
+    CaptureformComponent
   ],
   imports: [
     BrowserModule,
