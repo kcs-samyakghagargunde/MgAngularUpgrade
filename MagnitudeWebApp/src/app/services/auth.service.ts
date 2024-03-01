@@ -4,11 +4,12 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Observable } from 'rxjs';
+import { MatDialog } from '@angular/material/dialog';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private dialog: MatDialog) { }
 
   apiUrl = environment.apiUrl;
   private jwtHelper = new JwtHelperService();
@@ -63,3 +64,4 @@ export class AuthService {
     return this.http.get<any[]>(`${this.apiUrl}/Capture`);
   }
 }
+

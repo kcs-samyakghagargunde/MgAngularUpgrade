@@ -9,6 +9,7 @@ import { ContactlistComponent } from './components/contact/contactlist/contactli
 import { ContacteditComponent } from './components/contact/contactedit/contactedit.component';
 import { CaptureformComponent } from './components/contact/captureform/captureform.component';
 import { ContactsComponent } from './components/contact/contacts/contacts.component';
+import { NewSlidePageComponent } from './components/new-slide-page/new-slide-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,6 +21,8 @@ const routes: Routes = [
   { path: 'contactedit/:contactId', component: ContacteditComponent},
   { path: 'captureform/:contactId', component: CaptureformComponent},
   { path: 'contacts', component: ContactsComponent},
+  { path: 'new-slide-page', component: NewSlidePageComponent},
+
  ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
