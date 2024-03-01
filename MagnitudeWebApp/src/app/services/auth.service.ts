@@ -63,5 +63,11 @@ export class AuthService {
   getcapture(): Observable<any> {
     return this.http.get<any[]>(`${this.apiUrl}/Capture`);
   }
+  GetQuestion(): Observable<any> {
+    return this.http.get<any[]>(`${this.apiUrl}/Question`);
+  }
+  GetDynamicFields(): Observable<any> {
+    return this.http.get<any[]>(`${this.apiUrl}/DynamicFields`);
+  }
 }
 
