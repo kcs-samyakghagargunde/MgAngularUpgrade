@@ -1,52 +1,17 @@
-<div class="container">
-    <div class="box">
-        <div class="round-image"><img (click)="GetContatlist()" src="assets/Logo.png"></div>
-        <p>Activity 1</p>
-        <p class="txt"><mat-icon>chat</mat-icon>Chat       1</p>
-        <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p>
+<div class="parent background-with-overlay">
+  <div class="container" [@fadeInOut]="showNewComponent ? 'in' : 'out'">
+    <div *ngFor="let image of images" class="box" (click)="onImageClick(image)">
+      <div class="round-image"><img [src]="image.src" /></div>
+      <p>{{ image.activityName }}</p>
+      <p class="txt"><mat-icon>chat</mat-icon>Chat 1</p>
+      <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p>
     </div>
-    <div class="box">
-        <div class="round-image"><img  src="assets/Logo.png"></div>
-        <p>Activity 2</p>
-        <p class="txt"><mat-icon>chat</mat-icon>Chat       1</p>
-        <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p>
-    </div>
-    <div class="box">
-        <div class="round-image"><img  src="assets/Logo.png"></div>
-        <p>Activity 3</p>
-        <p class="txt"><mat-icon>chat</mat-icon>Chat       1</p>
-        <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p>
-    </div>
-    <div class="box">
-        <div class="round-image"><img  src="assets/Logo.png"></div>
-        <p>Activity 4</p>
-        <p class="txt"><mat-icon>chat</mat-icon>Chat       1</p>
-        <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p>
-    </div>
-    <div class="box">
-        <div class="round-image"><img  src="assets/Logo.png"></div>
-        <p>Activity 5</p>
-        <p class="txt"><mat-icon>chat</mat-icon>Chat       1</p>
-        <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p>
-    </div>
-    <div class="box">
-        <div class="round-image"><img  src="assets/Logo.png"></div>
-        <p>Activity 6</p>
-        <p class="txt"><mat-icon>chat</mat-icon>Chat       1</p>
-        <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p>
-    </div>
-    <div class="box">
-        <div class="round-image"><img  src="assets/Logo.png"></div>
-        <p>Activity 7</p>
-        <p class="txt"><mat-icon>chat</mat-icon>Chat       1</p>
-        <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p>
-    </div>
-    <div class="box">
-        <div class="round-image"><img  src="assets/Logo.png"></div>
-        <p>Activity 8</p>
-        <!-- <p class="txt"><mat-icon>chat</mat-icon>Chat       1</p> -->
-       <p> <span class="ct">chat</span><span>1</span></p>
-       <p> <span class="ct">Unresolved</span><span>45</span></p>
-        <!-- <p class="txt"><mat-icon>file_copy</mat-icon>Unresolved 45</p> -->
-    </div>
-    </div>
+  </div>
+  <div *ngIf="showNewComponent" class="new-component">
+    <app-new-slide-page
+      [image]="clickedImage"
+      [activityName]="clickedActivityName"
+      (close)="onCloseNewComponent()"
+    ></app-new-slide-page>
+  </div>
+</div>
