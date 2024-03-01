@@ -29,4 +29,7 @@ export class NewSlidePageComponent{
   closePopup() {
     this.close.emit();
   }
+  GetContatlist(){
+    this.router.navigate(['/contactlist']);
+  }
 }
