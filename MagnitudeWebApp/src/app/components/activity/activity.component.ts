@@ -30,14 +30,14 @@ export class ActivityComponent {
   constructor(private router: Router,private authService: AuthService,private route: ActivatedRoute){}
 
   images = [
-    { src: 'assets/Logo.png', activityName: 'Activity 1' },
-    { src: 'assets/Logo.png', activityName: 'Activity 2' },
-    { src: 'assets/Logo.png', activityName: 'Activity 3' },
-    { src: 'assets/Logo.png', activityName: 'Activity 4' },
-    { src: 'assets/Logo.png', activityName: 'Activity 5' },
-    { src: 'assets/Logo.png', activityName: 'Activity 6' },
-    { src: 'assets/Logo.png', activityName: 'Activity 7' },
-    { src: 'assets/Logo.png', activityName: 'Activity 8' },
+    { src: 'assets/A2bg.png', activityName: 'Activity 1' },
+    { src: 'assets/A2bg.png', activityName: 'Activity 2' },
+    { src: 'assets/A2bg.png', activityName: 'Activity 3' },
+    { src: 'assets/A2bg.png', activityName: 'Activity 4' },
+    { src: 'assets/A2bg.png', activityName: 'Activity 5' },
+    { src: 'assets/A2bg.png', activityName: 'Activity 6' },
+    { src: 'assets/A2bg.png', activityName: 'Activity 7' },
+    { src: 'assets/A2bg.png', activityName: 'Activity 8' },
   ];
 
   onImageClick(image: any) {
