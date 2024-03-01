@@ -1,0 +1,178 @@
+/* Styling for the first container info */
+div.static-contact-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+}
+
+/* Styling for the heading */
+h5 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Styling for contact info */
+span.LiveParagraph {
+    font-weight: bold;
+}
+
+/* Styling for individual info items */
+span#fname {
+    color: #007bff; /* Change the color as needed */
+}
+
+span#email {
+    color: #28a745; /* Change the color as needed */
+}
+
+/* Styling for the second container */
+div.container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Styling for the container with scrollbar */
+div.container1 {
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+ 
+}
+
+/* Styling for the data rows */
+div.data-row {
+    margin-bottom: 10px;
+}
+
+input[type=text]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+input[type=password]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+input[type=file]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+input[type=number]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+input[type=email]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+input[type=textarea]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+input[type=color]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+input[type=range]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+input[type=date]{
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #302e2eb9; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+    cursor: pointer;
+    outline: none;
+}
+/* Styling for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.container2 {
+    display: inline-flex; /* or display: inline-block; */
+}
+
+.container2 label {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
